@@ -11,7 +11,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cccccc;
-  border: yellow 5px solid;
   background-size: 100% 100%;
 }
 
@@ -78,7 +77,6 @@ nav ul {
 .header-container {
 height: calc(100vh - 80px);
 display: flex;
-border: yellowgreen 3px solid;
 overflow: hidden;
 overflow-x: hidden;
 }
@@ -87,7 +85,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: red 1px solid;
   margin-top: 50px;
   max-width: 100vw;
 }
@@ -110,41 +107,53 @@ header p {
 
 
 .hero-content {
-  border: orange 5px solid;
 }
 
 .typed {
+  font-family: 'Rajdhani', sans-serif;
   font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content, 30%;
 }
+
+typed p {
+  margin: 0;
+}
+
 
 .typed-1 {
   margin-right: 10px;
-  margin-top: 180px;
+  margin-top: 210px;
+  width: fit-content;
 }
 
 .typed-2 {
   margin-right: 10px;
-  margin-top: 180px;
+  margin-top: 0px;
+  width: fit-content;
+
+
 }
 
 .typed-3 {
   margin-right: 10px;
-  margin-top: 180px;
+  margin-top: -100px;
+  width: fit-content;
+
+
 }
 
 .typed-4 {
   margin-right: 10px;
   margin-top: 180px;
+  width: fit-content;
+
 }
 
-.typed-5 {
-  margin-right: 10px;
-  margin-top: 180px;
-}
 
 .about-container {
   display: none;
