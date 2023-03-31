@@ -105,8 +105,8 @@ header p {
   margin-top: 25px
 }
 
-
-.hero-content {
+.hero-content p {
+  width: auto;
 }
 
 .typed {
@@ -119,6 +119,7 @@ header p {
   width: 100%;
   height: fit-content, 30%;
 }
+
 
 typed p {
   margin: 0;
@@ -153,6 +154,7 @@ typed p {
   width: fit-content;
 
 }
+
 
 
 .about-container {

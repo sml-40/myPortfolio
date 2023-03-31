@@ -42,13 +42,13 @@
       <header> 
         <div class="hero-content">
         <h1>Hello, <br>I'm Selina</h1>
-          <p>JUNIOR SOFTWARE ENGINEER</p>
+          <p><span class="auto-type"></span></p>
         </div>
         <div class="typed">
-          <p class="typed-1">Marketing Graduate <img class="flag" src="/portfolio_website/images/flag.png" alt="flag"></p>
-          <p class="typed-2">Operational Trainer <img class="flag" src="/portfolio_website/images/flag.png" alt="flag"></p>
-          <p class="typed-3">Published Writer <img class="flag" src="/portfolio_website/images/flag.png" alt="flag"></p>
-          <p class="typed-4">Mother of Two <img class="flag" src="/portfolio_website/images/flag.png" alt="flag"></p>        
+          <p class="typed-1">MARKETING GRADUATE<img class="flag1" src="/portfolio_website/images/flag.png" alt="flag"></p>
+          <p class="typed-2">OPERATIONAL TRAINER<img class="flag2" src="/portfolio_website/images/flag.png" alt="flag"></p>
+          <p class="typed-3">PUBLISHED WRITER<img class="flag3" src="/portfolio_website/images/flag.png" alt="flag"></p>
+          <p class="typed-4">MOTHER OF TWO<img class="flag4" src="/portfolio_website/images/flag.png" alt="flag"></p>        
         </div>
       </header>
     </div>
@@ -92,7 +92,37 @@
       </footer>
     </div>
   </div>
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
 
-    <script src="main.js"></script>
+  <script >
+    var typed = new Typed('.auto-type', {
+      strings: ["JUNIOR SOFTWARE ENGINEER", "GENERAL ASSEMBLY GRADUATE", "FULL STACK DEVELOPER"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+
+    // var typed = new Typed('.auto-type1', {
+    //   strings: ["Operational Trainer"],
+    //   typeSpeed: 150,
+    //   backSpeed: 150,
+    //   loop: true
+    // });
+
+    // var typed = new Typed('.auto-type2', {
+    //   strings: ["Published Author"],
+    //   typeSpeed: 150,
+    //   backSpeed: 150,
+    //   loop: true
+    // });
+
+    // var typed = new Typed('.auto-type3', {
+    //   strings: ["Mother of Two"],
+    //   typeSpeed: 150,
+    //   backSpeed: 150,
+    //   loop: true
+    // });
+  </script>
+  <script src="main.js"></script>
 </body>
 </html>
