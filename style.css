@@ -62,10 +62,13 @@ nav ul {
   letter-spacing: 0.5px;
   line-height: 22px;
   text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .nav-items li a:hover {
   color: #ED9065;
+  transform: translate(0, -5px);
 }
 
 .nav-items li:nth-last-of-type(1) {
