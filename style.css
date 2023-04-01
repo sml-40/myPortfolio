@@ -109,6 +109,71 @@ header p {
   width: auto;
 }
 
+.flags {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 100px);  
+  grid-template-areas: 
+    "head1 head2 flag2 optra head5 head6 head7 head8"
+    "mid1 mid2 mid3 mid4 flag3 puwri mid7 mid8"
+    "flag1 magra foot3 foot4 foot5 foot6 flag4 mum2";
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+}
+
+.flag1 {
+  /* width: fit-content; */
+  grid-area: flag1; 
+  animation: myRotate 2s 1;
+}
+
+.p1 {
+  grid-area: magra;
+}
+
+@keyframes myRotate {
+  from {
+    transform: rotateX('0deg');
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+  
+}
+
+.flags p {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.flag2 {
+  grid-area: flag2;
+  animation: myRotate 2s 1;
+}
+
+.p2 {
+  grid-area: optra;
+}
+
+.flag3 {
+  grid-area: flag3;
+  animation: myRotate 2s 1;
+}
+
+.p3 {
+  grid-area: puwri;
+}
+
+.flag4 {
+  grid-area: flag4;
+  animation: myRotate 2s 1;
+}
+
+.p4 {
+  grid-area: mum2;
+}
+
 .typed {
   font-family: 'Rajdhani', sans-serif;
   font-size: 24px;
