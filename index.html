@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
@@ -15,15 +17,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="body">
+  <section class="navbar">
   <div class="nav-container">
     <div class="wrapper">
       <nav>
         <div class="logo">
-          <img src="/portfolio_website/images/SLogo (1) 1.png" alt="Purple Logo">
+          <a id="main">
+          <img src="/portfolio_website/images/SLogo (1) 1.png" alt="Logo">
+        </a>
         </div>
+
         <ul class="nav-items">
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
            <li>
             <a href="#">Projects</a>
@@ -35,11 +41,17 @@
             <a href="#">Contact</a>
           </li>
         </ul>
+
       </nav>
     </div>
   </div>
+</section>
+
+<!---- Main Page Section ----->
+
+<section class="main">
 <div class="header-container">
-  <div class="wrapper">
+  <div class="main-wrapper">
     <header> 
       <div class="hero-content">
           <h1><span>Hello, </span><br><span>I'm</span> <span>Selina</span></h1>
@@ -66,15 +78,51 @@
     </header>
   </div>
 </div>
+</section>
 
-<div class="about-container">
-    <div class="wrapper">
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet conse</p>
-      </div>
-    </div>
+<div class="footer-container">
+  <div class="wrapper">
+    <footer>
+      <p></p>
+    </footer>
   </div>
+</div>
+
+
+<!---- About Section ----->
+
+<section id="about" class="about">
+  <div class="about-container">
+        <h1>About Me</h1>
+        <p>My name is Selina Lavery.  I am a Junior Software Engineer with experience in the fields of marketing, finance, and training.
+          <br><br>
+          I live in Stonehaven, a beautiful seaside town  in  North-East Scotland with my husband, two kids and two cats.
+          <br><br>
+          In 2019, I completed a writing course with The Writer’s College which resulted in three of my short stories being published with online magazines and one featuring on a Podcast.
+          I began research to create my own website.
+          <br><br>
+          This led to my next passion. Coding.
+          <br><br>
+          After learning HTML and CSS on Codecademy, I decided to explore my interest in coding further.
+          <br><br>
+          I have recently graduated from a software engineering immersive programme with General Assembly where I learned a wide variety of programming and computer science concepts.
+          <br><br>
+          I have developed complete web applications using JavaScript, React, Ruby on Rails, and the MERN Stack
+          </p>
+  </div>
+</section>
+
+<div class="divider-container">
+  <div class="wrapper">
+    <footer>
+      <p></p>
+    </footer>
+  </div>
+</div>
+
+
+
+<!---- Projects Section ----->
   <div class="projects-container">
     <div class="wrapper">
       <div class="projects-content">
@@ -83,6 +131,15 @@
       </div>
     </div>
   </div>
+  <div class="divider-container">
+    <div class="wrapper">
+      <footer>
+        <p></p>
+      </footer>
+    </div>
+  </div>
+
+<!---- Storywriting Section ----->
   <div class="storywriting-container">
     <div class="wrapper">
       <div class="storywriting-content">
@@ -97,13 +154,6 @@
         <h2>Contact</h2>
         <p>Lorem ipsum dolor sit amet conse</p>
       </div>
-    </div>
-  </div>
-  <div class="footer-container">
-    <div class="wrapper">
-      <footer>
-        <p>© 2023 Selina Lavery</p>
-      </footer>
     </div>
   </div>
   <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
