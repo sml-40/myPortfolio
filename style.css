@@ -15,6 +15,7 @@ body {
   background-size: 100% 100%;
 }
 
+
 h1 {
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -82,18 +83,13 @@ nav ul {
   list-style: none;
 }
 
-.logo {
-  width: 72px;
-  height: 72px;
-}
 
-.nav-items li {
+
+.nav-items li a {
   list-style: none;
   margin-right: 100px;
   text-decoration: none;
-}
 
-.nav-items li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
@@ -121,7 +117,6 @@ height: calc(100vh - 72px);
 display: flex;
 overflow: hidden;
 overflow-x: hidden;
-
 }
 
 
@@ -135,19 +130,28 @@ header {
 
 header h1 {
   font-weight: 700;
-  font-size: 128px;
-  line-height: 152px;
+  /* font-size: 128px; */
+  font-size: 6em;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
-header p {
-  font-size: 24px;
+header h3 {
+  /* font-size: 24px; */
+  font-size: 2em;
   line-height: 29px;
   color: #FFFFFF;
-  width: 396px;
+  width: fit-content;
   margin-top: 25px
 }
+
+p {
+  /* font-size: 20px; */
+  font-size: 1.5em;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 25px;
+  width: 396px;}
 
 .hero-content p {
   width: auto;
@@ -156,12 +160,13 @@ header p {
 /********** Flags Section **********/
 .flags {
   display: grid;
+  width: fit-content;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(3, 100px);  
   grid-template-areas: 
-    "head1 head2 flag2 optra head5 head6 head7 head8"
-    "mid1 mid2 mid3 mid4 flag3 puwri mid7 mid8"
-    "flag1 magra foot3 foot4 foot5 foot6 flag4 mum2";
+    "head1 head2 head5 head6 flag2 optra head7 head8"
+    "mid1 mid2 flag3 puwri mid3 mid4 mid7 mid8"
+    "flag1 magra foot3 foot4 flag4 mum2 foot5 foot6";
   align-items: center;
   height: 30vh;
   width: 80vw;
@@ -262,3 +267,151 @@ header p {
 .storywriting-container {
   display: none;
 }
+
+/********** Media Queries Section **********/
+@media screen and (max-width: 600px) {          /***** Mobile ******/
+  header h1{
+    /* font-size: 40px; */
+    font-size: 4em;
+    line-height: 150%;
+  }
+  header h3 {
+    /* font-size: 20px; */
+    font-size: 1.5em;
+    line-height: 50%;
+  }
+
+  p {
+    /* font-size: 20px; */
+    font-size: 1.5em;
+  }
+
+  .flags {
+    width: fit-content;
+    /* margin-top: 40px; */
+    margin-top: 10em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 60px);  
+    grid-template-areas: 
+      "flag1 magra"
+      "flag2 optra"
+      "flag3 puwri"
+      "flag4 mum2";
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    max-height: 70px;
+  }
+  .nav-items li a {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+  .logo {
+    position: absolute;
+    margin-right: 90%;
+}
+    
+  }
+
+  @media screen and (min-width : 600px) and (max-width : 1000px) {  /* 600px to 1000px */
+    header h1{
+      /* font-size: 50px; */
+      font-size: 5em;
+      line-height: 150%;
+    }
+    header h3 {
+      /* font-size: 35px; */
+      font-size: 2em;
+      line-height: 100%;
+      width: fit-content;
+    }
+
+    p {
+      /* font-size: 30px; */
+      font-size: 2em;
+    }
+    .flags {
+      width: fit-content;
+      margin-top: 150px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 50px);  
+      grid-template-areas: 
+        "flag1 magra"
+        "flag2 optra"
+        "flag3 puwri"
+        "flag4 mum2";
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      max-height: 70px;
+    }
+    .nav-items li a {
+      margin-top: 25px;
+      margin-right: 30px;
+      font-size: 15px;
+      line-height: 10px;
+      align-items: center;
+      justify-content: center;
+      }
+  
+    .logo {
+      position: absolute;
+      margin-right: 90%;  }
+      
+    }
+
+    @media screen and (min-width : 1000px) and (max-width : 1200px) {  /* 1200px */
+      header h1{
+        /* font-size: 80px; */
+        font-size: 4em;
+        line-height: 150%;
+      }
+      header h3 {
+        /* font-size: 35px; */
+        font-size: 2em;
+        line-height: 100%;
+        width: fit-content;
+      }
+  
+      p {
+        /* font-size: 30px; */
+        font-size: 2em;
+      }
+      .flags {
+        width: fit-content;
+        margin-top: 150px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 50px);  
+        grid-template-areas: "flag1 magra flag2 optra"
+                             "flag3 puwri flag4 mum2";
+          }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        max-height: 70px;
+      }
+
+      .nav-items li a {
+        margin-top: 30px;
+        margin-right: 30px;
+        font-size: 20px;
+        line-height: 10px;
+        align-items: center;
+        justify-content: center;
+        }
+    
+      .logo {
+        position: absolute;
+        margin-right: 900px;
+      }
+  
+    }
