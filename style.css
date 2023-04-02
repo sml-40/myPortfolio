@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,7 +15,47 @@ body {
   background-size: 100% 100%;
 }
 
-/* Navigation */
+h1 {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/***** Navigation ******/
 
 .nav-container {
   background: linear-gradient(90deg, rgba(176, 222, 222, 0.67) 0%, rgba(176, 222, 222, 0.42) 100%);
@@ -41,7 +82,6 @@ nav ul {
   list-style: none;
 }
 
-
 .logo {
   width: 72px;
   height: 72px;
@@ -56,7 +96,7 @@ nav ul {
 .nav-items li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.5px;
   line-height: 22px;
@@ -74,12 +114,16 @@ nav ul {
   margin-right: 0;
 }
 
+/*****Main Content *****/
+
 .header-container {
-height: calc(100vh - 80px);
+height: calc(100vh - 72px);
 display: flex;
 overflow: hidden;
 overflow-x: hidden;
+
 }
+
 
 header {
   display: flex;
@@ -109,6 +153,7 @@ header p {
   width: auto;
 }
 
+/********** Flags Section **********/
 .flags {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -118,29 +163,39 @@ header p {
     "mid1 mid2 mid3 mid4 flag3 puwri mid7 mid8"
     "flag1 magra foot3 foot4 foot5 foot6 flag4 mum2";
   align-items: center;
-  width: 100%;
   height: 30vh;
+  width: 80vw;
 }
 
 .flag1 {
-  /* width: fit-content; */
   grid-area: flag1; 
-  animation: myRotate 2s 1;
+  animation: myFade ease-in 5s 1 normal forwards, myRotate 1s 3.5s 1;
+  width: fit-content;
 }
 
 .p1 {
   grid-area: magra;
+  animation: myFade ease-in 5s 1 normal forwards;
 }
 
 @keyframes myRotate {
   from {
-    transform: rotateX('0deg');
+    transform: rotateX(0deg);
   }
   to {
     transform: rotateY(360deg);
   }
-  
 }
+
+@keyframes myFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 .flags p {
   font-family: 'Rajdhani', sans-serif;
@@ -149,91 +204,61 @@ header p {
 
 .flag2 {
   grid-area: flag2;
-  animation: myRotate 2s 1;
+  animation: myFade ease-in 6s 1 normal forwards, myRotate 1s 4.5s 1;
+  width: fit-content;
 }
 
 .p2 {
   grid-area: optra;
+  animation: myFade ease-in 6s 1 normal forwards;
 }
 
 .flag3 {
   grid-area: flag3;
-  animation: myRotate 2s 1;
+  animation: myFade ease-in 8s 1 normal forwards, myRotate 1s 5.5s 1;
+  width: fit-content;
+
 }
 
 .p3 {
   grid-area: puwri;
+  animation: myFade ease-in 8s 1 normal forwards;
 }
 
 .flag4 {
   grid-area: flag4;
-  animation: myRotate 2s 1;
+  animation: myFade ease-in 9s 1 normal forwards, myRotate 1s 6.5s 1;
+  width: fit-content;
+
 }
 
 .p4 {
   grid-area: mum2;
-}
-
-.typed {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  height: fit-content, 30%;
+  animation: myFade ease-in 9s 1 normal forwards;
 }
 
 
-typed p {
-  margin: 0;
-}
-
-
-.typed-1 {
-  margin-right: 10px;
-  margin-top: 210px;
-  width: fit-content;
-}
-
-.typed-2 {
-  margin-right: 10px;
-  margin-top: 0px;
-  width: fit-content;
-
-
-}
-
-.typed-3 {
-  margin-right: 10px;
-  margin-top: -100px;
-  width: fit-content;
-
-
-}
-
-.typed-4 {
-  margin-right: 10px;
-  margin-top: 180px;
-  width: fit-content;
-
-}
-
-
+/********** About Section **********/
 
 .about-container {
   display: none;
 }
 
+
+
+/********** Projects Section **********/
+
 .projects-container {
   display: none;
 }
+
+/********** Contact Section **********/
 
 .contact-container {
   display: none;
 }
 
+/********** Creative Writing Section **********/
 .storywriting-container {
   display: none;
 }
