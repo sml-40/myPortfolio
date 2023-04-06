@@ -169,7 +169,7 @@ header {
 header h1 {
   font-weight: 700;
   /* font-size: 128px; */
-  font-size: 7em;
+  font-size: 7rem;
   color: #FFFFFF;
   text-transform: uppercase;
 }
@@ -341,14 +341,12 @@ section {
 .projects-container {
   display: flex;
   flex-direction: column;
-  min-height: 800px;
+  min-height: 80%;
   background-color: black;
   background-size: 100% 100%;
 }
 
 .projects {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,119 +361,12 @@ section {
   display: flex;
 }
 
-.projects h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.projects h1 a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.projects h1 a:hover {
-  color: #eabe51;
-  text-decoration: none;
-}
-
-.projects h1 svg {
-  width: 1em;
-  height: 1em;
-  margin-right: 0 auto;
-}
-
-.projects h1 svg:hover {
-  fill: #eabe51;
-}
-
-.projects h3 {
-  width: 100%;
-  text-align: left;
-  margin-left: 1.2em;
-  padding-top: 100px;
-
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.4em;
-  font-weight: 600;
-  padding: 10px;
-
-}
- .projects p {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  padding: 10px;
- }
-
- .project-header {
-  height: 100vh;
-  display: flex;
-  align-items: center;
- }
-
- 
- .projects-content h1 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 3em;
-  line-height: 75px;
-  text-align: left;
-  margin-bottom: 20px;
-  margin-left: 1em;
-}
-
- .projects-content p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 42px;
-  text-align: left;
-  margin-left: 2em;
- }
-
- .tech-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 100px;
- }
-
- .project-header .hero-image {
-  position: relative;
-  margin-right: 30px;
- }
-
- .project-header .hero-image img {
-  transition: 300ms;
-  position: relative;
-  z-index: 100;
- }
-
- .project-header .hero-image .photo-bg {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 47px;
-  top: 21px;
-  background: #EABE51;
-  transform: rotate(-5.5deg);   
- }
 
        /********* Projects Section *********/
 
        .projects {
         width: 80vw; 
+        height: 100%;
         background: url(portfolio_website/images/gradientBG.png);
         background-size: 100%;
         background-repeat: no-repeat;
@@ -483,11 +374,13 @@ section {
       }
 
       .projects-container {
+        width: 80vw;
+        height: 80%;
         background: url(portfolio_website/images/BGvector.png);
         overflow: hidden; /* to contain floated elements */
         background-repeat: no-repeat;
         background-position: right;
-
+        font-family: 'poppins', sans-serif;
       }
 
       footer {
@@ -530,7 +423,7 @@ section {
         margin: 0;
         width: 100%;
         padding: 20px 0 0 0;
-        font-size: 1.5em;    
+        font-size: 1em;    
         line-height: 2.5em;    
         text-align: center;
       }
@@ -1300,11 +1193,13 @@ section {
       .projects {
         width: 80vw; 
         background: url(portfolio_website/images/gradientBG.png);
+       
       }
 
       .projects-container {
         background: url(portfolio_website/images/BGvector.png);
         overflow: hidden; /* to contain floated elements */
+       
       }
 
       footer {
@@ -1341,8 +1236,8 @@ section {
       .projects-content p {
         margin: 0;
         padding: 20px 0 0 0;
-        font-size: 1em;    
-        line-height: 2.5em;    
+        font-size: 1.5em;    
+        line-height: 2em;    
 
       }
 
