@@ -687,65 +687,109 @@ section {
   color: #ffd15d;
  }
 
-/********** INTERESTS Section **********/
+/********** contact Section **********/
   
-.interests {
+.contact {
   width: 80%;
   margin: auto;
   text-align: center;
   color: #fff;
   background-color: black;
   display: flex;
+  border: #ffd15d 1px solid;
 }
 
-.interests-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 80%;
-  min-width: 100%;
-  background: url("portfolio_website/images/seaglass.png");
+.contact-container {
+  width: 80vw;
+  min-height: 80vh;
+  background: url("portfolio_website/images/gradientBG.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
   background-size: 100% 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
+
+.card{
+  background-color: transparent;
+  z-index:10;
+  font-family: 'Poppins', sans-serif;
+  padding:20px;
+  border-radius:20px;
+  
+}
+
+.top-div {
+  display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.top-div h2{
+  font-weight:900;
+  font-size: 3.5em;
+  color:#181524;
+ 
+}
+.stats{
+  display:flex;
+  margin:20px;
+  justify-content:space-between;
+}
+
+.stats1 {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  cursor:pointer;
+  transition:all 0.5s;
+  padding:10px;
+}
+
+.stats1 svg {
+  width: 2em;
+  height: 2em;
+  margin-right: 10px;
+
+}
+
+.stats1 span:nth-child(1){
+  font-size: 2em;
+}
+.stats1 span:nth-child(2){
+  font-weight:800;
+  font-size: 1.5em;
+}
+
+.stats1 a {
+  color: #181524;
+  text-decoration: none;
+ 
+}
+
+.stats1 a:hover {
+ color: #eabe51;
+}
+
+.stats1 svg:hover {
+  fill: #eabe51;
+ }
 
 .icon-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1em;
-  grid-template-areas: ".github .linkedin .email .";
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  border: greenyellow 2px solid;
+  margin: 0 auto;
+  margin-top: 10%;
 }
 
-.interests-content p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: 2em auto;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
-  line-height: normal;
-  font-weight: 800;
-}
-
-.interests-content h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-  margin-top: 2%;
-  width: 50;
-}
-
-
-.interests-content .top {
-  margin-top: 20%;
+.icon-wrapper ul li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 /********** Media Queries Section **********/
