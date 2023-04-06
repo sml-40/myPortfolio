@@ -342,10 +342,6 @@ section {
   display: flex;
   flex-direction: column;
   min-height: 800px;
-  background: url("portfolio_website/images/gradientBG.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: black;
   background-size: 100% 100%;
 }
@@ -420,10 +416,6 @@ section {
  }
 
  .project-header {
-  background: url("portfolio_website/images/GroupBG.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -470,10 +462,6 @@ section {
   z-index: 100;
  }
 
- .project-header .hero-image img:hover {
-   transform: rotate(-6deg);
- }
-
  .project-header .hero-image .photo-bg {
   position: absolute;
   width: 500px;
@@ -484,7 +472,110 @@ section {
   transform: rotate(-5.5deg);   
  }
 
+       /********* Projects Section *********/
+
+       .projects {
+        width: 80vw; 
+        background: url(portfolio_website/images/gradientBG.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: cover;
+      }
+
+      .projects-container {
+        background: url(portfolio_website/images/BGvector.png);
+        overflow: hidden; /* to contain floated elements */
+        background-repeat: no-repeat;
+        background-position: right;
+
+      }
+
+      footer {
+        margin-top: 0;
+        margin-right: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer .tech-icons {
+        margin: 0 0 20px 0;
+      }
+
+      .projects-header {
+        width: 50%;
+      }
+
+      .projects-header h1 {
+       font-size: 3em;
+       text-align: center;
+       padding: 2%;
+
+      }
+
+      .projects-header h3 {
+        text-align: center;
+        margin: 0;
+        padding: 2%;
+      }
+
+      .projects-content {
+        width: 50%;
+        float: left;
+        padding: 2%;
+        text-align: center;
+      }
+
+      .projects-content p {
+        margin: 0;
+        width: 100%;
+        padding: 20px 0 0 0;
+        font-size: 1.5em;    
+        line-height: 2.5em;    
+        text-align: center;
+      }
+
+      .projects-content svg {
+        width: 1em;
+      }
+
+    .projects-content a:hover {
+      color: #eabe51;
+      text-decoration: none;
+    }
+
+    .projects-content a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .projects-content svg:hover {
+      fill: #eabe51;
+      text-decoration: none;
+    }
+
+      .hero-image {
+        width: 50%;
+        float: right;
+        background: url(portfolio_website/images/yellowRec.png);
+        background-size: 72%; /* adjust the percentage to change the size */
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .hero-image img {
+        width: 80%;
+        display: block; /* to remove extra spacing */
+        margin: 0 auto; /* to center the image */
+      }
+
+      .hero-image img:hover {
+        transform: rotate(-6deg);
+      }
+
+
  .divider-container {
+  color: #eabe51;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -718,6 +809,11 @@ section {
   .logo {
    display: none;
 }
+
+.divider-container h1 {
+  color: #eabe51;
+}
+
     
   }
 
@@ -807,6 +903,9 @@ section {
       height: 200px;
      }
 
+    .divider-container h1 {
+      color: #eabe51;
+    }
      /********** INTERESTS Section **********/
   
 .interests {
@@ -959,64 +1058,103 @@ section {
  }
 
 
-/********** Projects Section **********/
+      /********* Projects Section *********/
 
       .projects {
-        width: 80vw; /* reduce the width of the projects container */
-      
-      }
-      
-      .projects-content h1 {
-        font-size: 3em; /* reduce the font size of the project header */
-        margin-top: 20px;
-      }
-      
-      .projects-content h3 {
-        font-size: 1.5em; /* reduce the font size of the project subheader */
-        line-height: 1.5em;
-      }
-      
-      .projects-content p {
-        font-size: 15px; /* reduce the font size of the project description */
-        line-height: 15px;
-      }
-      
-      .tech-icons {
-        width: 10em;
-        margin-left: 7.5em; /* remove the left margin on the tech icons */
-      }
-      
-      .project-header {
-        height: auto; /* adjust the height of the project header */
-        flex-direction: column; /* change the direction of the header content */
+        width: 80vw; 
+        border: yellow 2px solid;
+        background: url(portfolio_website/images/gradientBG.png);
       }
 
-      .hero-image img {
+      .projects-container {
+        border: blue 2px solid;
+        background: url(portfolio_website/images/BGvector.png);
+        overflow: hidden; /* to contain floated elements */
+      }
+
+      .wrapper {
+        border: rgb(255, 255, 255) 2px solid;
+      }
+
+      footer {
+        border: purple 5px solid;
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+      }
+
+      footer .tech-icons {
+        border: #fff 2px solid;
+        margin: 0;
+      }
+
+      .projects-header {
+        border: greenyellow 2px solid;
         width: 50%;
       }
 
-      /* .photo-bg {
-        display: none;
-      } */
-      
-      .project-header .hero-image {
-        margin-right: 0; /* remove the right margin on the hero image */
-        margin-bottom: 10px; /* add some bottom margin for spacing */
+      .projects-header h1 {
+       font-size: 3em;
+       text-align: left;
+       border: #181524 2px solid;
       }
-      
-      .project-header .hero-image img:hover {
-        transform: rotate(-5deg); /* remove the hover rotation on the hero image */
+
+      .projects-header h3 {
+        border: #181524 2px solid;
+        text-align: left;
+        margin: 0;
+        padding: 0;
       }
-      
-      .project-header .hero-image .photo-bg {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        left: 175px;
-        top: 15px;      
-        background: #EABE51;
-        transform: rotate(-5.5deg);   
-       }      
+
+      .projects-content {
+        border: rgb(92, 153, 0) 2px solid;
+        width: 50%;
+        float: left;
+      }
+
+      .projects-content p {
+        margin: 0;
+        padding: 20px 0 0 0;
+        font-size: 1em;    
+        line-height: 2.5em;    
+
+      }
+
+      .projects-content svg {
+        width: 1em;
+      }
+
+    .projects-content a:hover {
+      color: #eabe51;
+      text-decoration: none;
+    }
+
+    .projects-content a {
+      font-size: large;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .projects-content svg:hover {
+      color: #eabe51;
+      text-decoration: none;
+    }
+
+      .hero-image {
+        border: red 2px solid;
+        width: 50%;
+        float: right;
+        background: url(portfolio_website/images/yellowRec.png);
+        background-size: 75%; /* adjust the percentage to change the size */
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .hero-image img {
+        width: 80%;
+        display: block; /* to remove extra spacing */
+        margin: 0 auto; /* to center the image */
+      }
       .divider-container {
         height: auto; /* adjust the height of the divider container */
         padding: 50px 0; /* add some padding for spacing */
@@ -1052,30 +1190,29 @@ section {
     @media screen and (min-width : 1000px) and (max-width : 1400px) {  /* 1200px */
       header h1{
         /* font-size: 80px; */
-        font-size: 4em;
+        font-size: 3em;
         line-height: 150%;
       }
       header h3 {
         /* font-size: 35px; */
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 100%;
         width: fit-content;
       }
   
       p {
         /* font-size: 30px; */
-        font-size: 1.5em;
+        font-size: 1em;
       }
       .flags {
         width: fit-content;
         margin-top: 3em;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);  
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);  
         grid-template-areas: 
-          "flag1 magra"
-          "flag2 optra"
-          "flag3 puwri"
-          "flag4 mum2";
+          "flag1 magra flag2 optra"
+          "flag3 puwri flag4 mum2"
+          ;
       }
   
       nav {
@@ -1110,90 +1247,96 @@ section {
         height: 200px;
        }
   
-
+       .divider-container h1 {
+        color: #eabe51;
+      }
+  
       /********* Projects Section *********/
 
       .projects {
         width: 80vw; 
+        background: url(portfolio_website/images/gradientBG.png);
       }
-      
-      .projects-content h1 {
-        font-size: 3em;
-        margin-top: 20px;
+
+      .projects-container {
+        background: url(portfolio_website/images/BGvector.png);
+        overflow: hidden; /* to contain floated elements */
       }
-      
-      .projects-content h3 {
-        font-size: 1.5em; 
-        line-height: 1.5em;
+
+      footer {
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
       }
-      
+
+      footer .tech-icons {
+        margin: 0;
+      }
+
+      .projects-header {
+        width: 50%;
+      }
+
+      .projects-header h1 {
+        margin-top: 1em;
+       font-size: 3em;
+       text-align: center;
+      }
+
+      .projects-header h3 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .projects-content {
+        width: 50%;
+        float: left;
+      }
+
       .projects-content p {
-        font-size: 15px; 
-        line-height: 15px;
+        margin: 0;
+        padding: 20px 0 0 0;
+        font-size: 1em;    
+        line-height: 2.5em;    
+
       }
-      
-      .tech-icons {
-        width: 10em;
-        margin-left: 7.5em; 
+
+      .projects-content svg {
+        width: 1em;
       }
-      
-      .project-header {
-        height: auto; 
-        flex-direction: column; 
+
+    .projects-content a:hover {
+      color: #eabe51;
+      text-decoration: none;
+    }
+
+    .projects-content a {
+      font-size: large;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .projects-content svg:hover {
+      fill: #eabe51;
+      text-decoration: none;
+    }
+
+      .hero-image {
+        width: 50%;
+        float: right;
+        background: url(portfolio_website/images/yellowRec.png);
+        background-size: 75%; /* adjust the percentage to change the size */
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       .hero-image img {
-        width: 50%;
+        width: 80%;
+        display: block; /* to remove extra spacing */
+        margin: 0 auto; /* to center the image */
       }
       
-      .project-header .hero-image {
-        margin-right: 0;
-        margin-bottom: 10px; 
-      }
-      
-      .project-header .hero-image img:hover {
-        transform: rotate(-5deg); 
-      }
-      
-      .project-header .hero-image .photo-bg {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        left: 175px;
-        top: 15px;      
-        background: #EABE51;
-        transform: rotate(-5.5deg);   
-       }      
-
-      .divider-container {
-        height: auto; 
-        padding: 50px 0; 
-      }
-      
-      .icon-wrapper {
-        height: auto; 
-        width: 80%; 
-        margin: 10px 0; 
-      }
-      
-      .github,
-      .linkedin {
-        height: 40px; 
-        width: 40px;
-        margin: 0 5px; 
-      }
-
-      .github {
-        margin-bottom: 12px;
-      }
-
-      .github svg:hover {
-        fill: #eabe51;
-      }
-
-      .linkedin svg:hover {
-        fill: #eabe51;
-      }
      }
 
 
