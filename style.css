@@ -460,6 +460,7 @@ section {
         width: 80%;
         display: block; /* to remove extra spacing */
         margin: 0 auto; /* to center the image */
+        transition: transform 0.6s;
       }
 
       .hero-image img:hover {
